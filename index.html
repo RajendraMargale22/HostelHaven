@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Wellfleet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Wellfleet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Hostel Haven</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Hostel Haven</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Hostel</a></li>
+                <li><a href="#photo">Photos</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="Login">login</button>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu open">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#menu">Hostel</a></li>
+            <li><a href="#photo">Photos</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="#" class="Login">Login</a></li> -->
+            <button class="Login">login</button>
+        </div>
+
+        <div class="Home">
+            <h2>Home Away from Home<br>Your Ultimate Hostel Finder<br><p>User can search for hostels based on their preferences such as location, price, amenities, and reviews, making it easier to find a suitable place to stay during their travels</p></h2>
+            
+            <img src="hostel.png" alt="#">
+        </div>
+
+
+        
+    <!-- Login form -->
+
+    <!-- login page -->
+    <div class="wrapper">
+
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+<!-- login form box -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="connect.php" method="Post">
+
+                <!-- email input -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="Login_Email" required>
+                    <label>Email</label>
+                </div>
+
+                <!-- password input -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="Login_Password" required>
+                    <label>Password</label>
+                </div>
+
+                <!-- remember me checkbox -->
+                <!-- <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div> -->
+
+                <!-- submit login info button -->
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+
+            </form>
+        </div>
+
+
+<!-- register login box -->
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="connection.php" method="Post">
+
+                <!-- username input box -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="Res_username" required>
+                    <label>username</label>
+                </div>
+
+                <!-- email input -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="Res_Email" required>
+                    <label>Email</label>
+                </div>
+
+                <!-- password input -->
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="Res_Password" required>
+                    <label>Password</label>
+                </div>
+
+                <!-- remember me checkbox -->
+                <!-- <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                    
+                </div> -->
+
+                <!-- submit login info button -->
+                <button type="submit" class="btn">Register</button>
+
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    </header>
+
+
+
+    
+
+        <!-- menu -->
+        <div id="menu" class="menu">
+            <h1>Find<span>Hostel</span></h1>
+    
+            <div class="menu_box">
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src="image/1.jpg">
+                    </div>
+    
+    
+                    <div class="menu_info">
+                        <h2>Neelambari Girls PG (Hostel)</h2>
+                        <p>
+                            Saraswati Ganesh Apartment, 561 Sadashiv Peth, Laxmi Rd, Sadashiv Peth, Pune, Maharashtra 411030
+                        </p>
+                        <h3>₹7000.00</h3>
+                        <a href="https://maps.app.goo.gl/UBQVG9gVYs5vUZdV8" class="menu_btn">View</a>
+                    </div>
+    
+                </div> 
+    
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src="image/2.jpg">
+                    </div>
+    
+    
+                    <div class="menu_info">
+                        <h2>Tenanto KANSE BOYS HOSTEL</h2>
+                        <p>
+                            669/680 Baburao, Tangewale Rd, Pulachi Wadi, Deccan Gymkhana, Pune, Maharashtra 411004
+                        </p>
+                        <h3>₹5000.00</h3>
+                        <a href="https://maps.app.goo.gl/3t1VuzU1mpJgao1W6" class="menu_btn">View</a>
+                    </div>
+    
+                </div> 
+    
+    
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src="image/3.jpg">
+                    </div>
+    
+    
+                    <div class="menu_info">
+                        <h2>Baramati Boys Hostel</h2>
+                        <p>
+                            GRGG+2C8, 38, Gokhalenagar, Pune, Maharashtra 411016
+                        </p>
+                        <h3>₹7500.00</h3>
+                        <a href="https://maps.app.goo.gl/QQBbQQYcV9Y1T5Lp8" class="menu_btn">View</a>
+                    </div>
+    
+                </div> 
+
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src="image/4.jpg">
+                    </div>
+    
+    
+                    <div class="menu_info">
+                        <h2>Dinanath Boys Hostel</h2>
+                        <p>
+                            120/2, 70, Santosh Nagar X Rd, near Navgraha shnai mandir, Katraj, Pune, Maharashtra 411046
+                        </p>
+                        <h3>₹4500.00</h3>
+                        <a href="https://maps.app.goo.gl/o4VtGQCYcVvssckW6" class="menu_btn">View</a>
+                    </div>
+    
+                </div> 
+
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src="image/5.jpg">
+                    </div>
+    
+    
+                    <div class="menu_info">
+                        <h2>Pune Boys Hostel</h2>
+                        <p>
+                            Gokhalenagar, Pune, Maharashtra 411016
+                        </p>
+                        <h3>₹6000.00</h3>
+                        <a href="https://maps.app.goo.gl/HqEEYAh4hmzfw8j2A?g_st=aw" class="menu_btn">View</a>
+                    </div>
+    
+                </div> 
+
+                <!-- <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src="image/h1.jpg">
+                    </div>
+    
+    
+                    <div class="menu_info">
+                        <h2>Hostel Name</h2>
+                        <p>
+                            Location(Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates)
+                        </p>
+                        <h3>₹1200.00</h3>
+                        <a href="#" class="menu_btn">View</a>
+                    </div> -->
+    
+                </div> 
+    
+                
+            </div>
+    
+        </div>
+
+
+        <!-- Gallery -->
+
+        <div class="gallary" id="photo">
+            <h1>Hostel<span>Photos</span></h1>
+    
+            <div class="gallary_image_box">
+    
+                <div class="gallary_image">
+                    <img src="image/1.jpg">
+                    <!-- <p>
+                        "Location" 
+                    </p> -->
+                    <a href="https://maps.app.goo.gl/UBQVG9gVYs5vUZdV8" class="gallary_btn">View</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/2.jpg">
+                    <!-- <p>
+                        "Location" 
+                    </p> -->
+                    <a href="https://maps.app.goo.gl/3t1VuzU1mpJgao1W6" class="gallary_btn">View</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/3.jpg">
+                    <!-- <p>
+                        "Location" 
+                    </p> -->
+                    <a href="https://maps.app.goo.gl/QQBbQQYcV9Y1T5Lp8" class="gallary_btn">View</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/4.jpg">
+                    <!-- <p>
+                        "Location" 
+                    </p> -->
+                    <a href="https://maps.app.goo.gl/o4VtGQCYcVvssckW6" class="gallary_btn">View</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/5.jpg">
+                    <!-- <p>
+                        "Location" 
+                    </p> -->
+                    <a href="https://maps.app.goo.gl/HqEEYAh4hmzfw8j2A?g_st=aw" class="gallary_btn">View</a>
+                </div>
+    
+                <!-- <div class="gallary_image">
+                    <img src="image/5.jpg">
+                    <p>
+                        "Location" 
+                    </p>
+                    <a href="#" class="gallary_btn">View</a>
+                </div> -->
+    
+    
+            </div>
+        </div>
+    
+        <!-- About us -->
+
+        <div class="About" id="about">
+            <h1>About<span>Us</span></h1>
+            <div class="about">
+                <h2>Welcome To Our Website<br><p>
+                    Welcome to Hostel Haven, where students find their perfect lodging solution for educational endeavors. Our platform is dedicated to providing an array of affordable and comfortable hostel options tailored specifically for student travelers. Hostel Haven streamlines the search process, ensuring that every student can easily discover a safe and welcoming accommodation near their educational destination. Join us at Hostel Haven and embark on your academic journey with confidence and convenience
+                </p></h2>
+                <img src="about.png" alt="about">
+            </div>
+        </div>
+
+        <!-- contact us -->
+
+        <div class="contact" id="contact">
+            <h1>Contact<span>Us</span></h1>
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form action="connect2.php" method="Post">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+    
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-phone"></i>+91 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i>info@example.com</p>
+                        <P><i class="fas fa-map-marker-alt"></i>1186/A, Off J.M. Road, Shivajinagar, Pune,Maharashtra Pin- 411005.</P>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+
+    
+    
+
+
+    <script src='script.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
