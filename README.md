@@ -226,4 +226,4 @@ GET    /api/admin/contacts       (admin)
 
 ## Author
 
-Built by a student, for students. If this project helped you, leave a ⭐ on [GitHub](https://github.com/your-username/hostelhaven).
+Built by a student, for students. If this project helped you, leave a ⭐ on [GitHub](https://github.com/RajendraMargale22/HostelHaven).
