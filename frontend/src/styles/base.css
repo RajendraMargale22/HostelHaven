@@ -1,0 +1,120 @@
+/* ═══════════════════════════════════════════════════════
+   BASE — Reset, Typography, Layout Utilities
+   ═══════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.65;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > #root { display: flex; flex-direction: column; min-height: 100vh; }
+.page-wrapper { flex: 1; }
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; object-fit: cover; }
+ul, ol { list-style: none; }
+button { cursor: pointer; font-family: var(--font-body); border: none; background: none; }
+input, select, textarea { font-family: var(--font-body); }
+
+/* ── Typography ──────────────────────────────────────── */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-head);
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--navy);
+}
+h1 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); }
+h3 { font-size: clamp(1.15rem, 2vw, 1.5rem); }
+h4 { font-size: 1.1rem; }
+p  { color: var(--text-lt); line-height: 1.8; }
+
+.accent       { color: var(--coral); }
+.accent-teal  { color: var(--teal); }
+
+/* ── Container ───────────────────────────────────────── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media (max-width: 640px) { .container { padding: 0 20px; } }
+
+/* ── Section ─────────────────────────────────────────── */
+.section     { padding: var(--section-py) 0; }
+.section-sm  { padding: 72px 0; }
+
+/* ── Section Header ──────────────────────────────────── */
+.section-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.section-header h2    { margin-bottom: 16px; }
+.section-header p     { max-width: 560px; margin: 0 auto; font-size: 1.08rem; }
+
+/* ── Eyebrow ─────────────────────────────────────────── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--coral);
+  background: var(--coral-bg);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+}
+.eyebrow.teal  { color: var(--teal);  background: var(--teal-bg); }
+.eyebrow.amber { color: var(--amber); background: var(--amber-bg); }
+.eyebrow.navy  { color: var(--white); background: var(--navy); }
+
+/* ── Divider ─────────────────────────────────────────── */
+.divider {
+  width: 52px; height: 4px;
+  background: linear-gradient(90deg, var(--coral), var(--coral-lt));
+  border-radius: var(--radius-full);
+  margin: 20px auto 0;
+}
+.divider.left { margin-left: 0; }
+
+/* ── Badge ───────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 13px;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.badge-boys      { background: rgba(59,91,219,0.9);  color: #fff; }
+.badge-girls     { background: rgba(194,37,92,0.9);  color: #fff; }
+.badge-co-ed     { background: rgba(112,72,232,0.9); color: #fff; }
+.badge-pending   { background: var(--amber-bg); color: #b45309; }
+.badge-confirmed { background: var(--green-bg);  color: #166534; }
+.badge-rejected  { background: var(--red-bg);    color: #991b1b; }
+.badge-cancelled { background: var(--gray-100);  color: var(--gray-500); }
+
+/* ── Utilities ───────────────────────────────────────── */
+.text-center     { text-align: center; }
+.w-100           { width: 100%; }
+.d-none          { display: none !important; }
+.mt-auto         { margin-top: auto; }
+.mt-3            { margin-top: 16px; }
+.mt-4            { margin-top: 24px; }
+.mt-5            { margin-top: 40px; }

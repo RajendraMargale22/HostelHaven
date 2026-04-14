@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56">
+  <!-- ── Icon (scaled down favicon) ── -->
+
+  <!-- Icon background -->
+  <rect x="0" y="4" width="48" height="48" rx="11" fill="#0F1629"/>
+
+  <!-- Roof -->
+  <polygon points="24,11 8,26 40,26" fill="#FF5A3C"/>
+
+  <!-- Chimney -->
+  <rect x="30" y="14" width="5" height="9" rx="1.5" fill="#FF5A3C"/>
+
+  <!-- Wall -->
+  <rect x="10" y="25" width="28" height="18" rx="1.5" fill="#FFFFFF"/>
+
+  <!-- Door -->
+  <rect x="19" y="31" width="10" height="12" rx="2" fill="#0F1629"/>
+
+  <!-- Door knob -->
+  <circle cx="26.5" cy="37.5" r="1.2" fill="#FF5A3C"/>
+
+  <!-- Left window -->
+  <rect x="12" y="28" width="6" height="5" rx="1" fill="#E0F5F3"/>
+  <line x1="15" y1="28" x2="15" y2="33" stroke="#0F1629" stroke-width="0.8"/>
+  <line x1="12" y1="30.5" x2="18" y2="30.5" stroke="#0F1629" stroke-width="0.8"/>
+
+  <!-- Right window -->
+  <rect x="30" y="28" width="6" height="5" rx="1" fill="#E0F5F3"/>
+  <line x1="33" y1="28" x2="33" y2="33" stroke="#0F1629" stroke-width="0.8"/>
+  <line x1="30" y1="30.5" x2="36" y2="30.5" stroke="#0F1629" stroke-width="0.8"/>
+
+  <!-- Ground -->
+  <line x1="7" y1="43" x2="41" y2="43" stroke="#FF5A3C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- ── Wordmark ── -->
+
+  <!-- "Hostel" in navy -->
+  <text
+    x="62"
+    y="35"
+    font-family="Outfit, system-ui, sans-serif"
+    font-size="24"
+    font-weight="800"
+    fill="#0F1629"
+    letter-spacing="-0.5"
+  >Hostel</text>
+
+  <!-- "Haven" in coral -->
+  <text
+    x="136"
+    y="35"
+    font-family="Outfit, system-ui, sans-serif"
+    font-size="24"
+    font-weight="800"
+    fill="#FF5A3C"
+    letter-spacing="-0.5"
+  >Haven</text>
+</svg>

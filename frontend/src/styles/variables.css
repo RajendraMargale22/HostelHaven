@@ -1,0 +1,73 @@
+/* ═══════════════════════════════════════════════════════
+   HOSTEL HAVEN — DESIGN TOKENS
+   ═══════════════════════════════════════════════════════ */
+:root {
+  /* Brand Colors */
+  --coral:        #FF5A3C;
+  --coral-dk:     #E04430;
+  --coral-lt:     #FF7A61;
+  --coral-bg:     #FFF1EE;
+
+  --navy:         #0F1629;
+  --navy-md:      #1E2A4A;
+  --navy-lt:      #2D3F6B;
+
+  --teal:         #00BFA5;
+  --teal-dk:      #009688;
+  --teal-bg:      #E0F5F3;
+
+  --amber:        #FFB300;
+  --amber-bg:     #FFF8E1;
+
+  --green:        #2ECC71;
+  --green-bg:     #E8F8F0;
+  --red:          #E74C3C;
+  --red-bg:       #FDECEA;
+
+  /* Neutrals */
+  --white:        #FFFFFF;
+  --off-white:    #F6F8FC;
+  --gray-50:      #F2F4F9;
+  --gray-100:     #E8ECF4;
+  --gray-200:     #D4DAE8;
+  --gray-300:     #B0BAD0;
+  --gray-400:     #8592B0;
+  --gray-500:     #576080;
+  --gray-600:     #3A4260;
+  --text:         #0F1629;
+  --text-md:      #3A4260;
+  --text-lt:      #64718F;
+
+  /* Typography */
+  --font-head:    'Outfit', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-py:   120px;
+  --container:    1280px;
+
+  /* Borders */
+  --radius-xs:    6px;
+  --radius-sm:    10px;
+  --radius:       16px;
+  --radius-lg:    22px;
+  --radius-xl:    32px;
+  --radius-full:  999px;
+
+  /* Shadows */
+  --shadow-xs:    0 1px 4px rgba(15,22,41,0.06);
+  --shadow-sm:    0 2px 16px rgba(15,22,41,0.08);
+  --shadow:       0 4px 28px rgba(15,22,41,0.10);
+  --shadow-md:    0 8px 40px rgba(15,22,41,0.12);
+  --shadow-lg:    0 20px 64px rgba(15,22,41,0.15);
+  --shadow-coral: 0 8px 32px rgba(255,90,60,0.32);
+
+  /* Transitions */
+  --t:            0.22s ease;
+  --t-slow:       0.4s ease;
+
+  /* Z-index */
+  --z-nav:        1000;
+  --z-modal:      2000;
+  --z-toast:      3000;
+}
