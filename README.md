@@ -8,10 +8,10 @@
 
 ## Live Demo
 
-| Service | URL |
-|---|---|
-| Frontend | [hostel-haven-blush.vercel.app](https://hostel-haven-blush.vercel.app/) |
-| Backend API | [hostelhaven-backend.onrender.com](https://hostelhaven-backend.onrender.com) |
+| Service  | URL                                                                          |
+|----------|------------------------------------------------------------------------------|
+| Frontend | [hostel-haven-blush.vercel.app](https://hostel-haven-blush.vercel.app/)      | 
+| Backend  | [hostelhaven-backend.onrender.com](https://hostelhaven-backend.onrender.com) |
 
 ---
 
@@ -38,27 +38,31 @@
 ## Tech Stack
 
 ### Frontend
-| | |
-|---|---|
-| Framework | [React 18](https://react.dev) |
-| Build | [Vite 5](https://vitejs.dev) |
-| Routing | [React Router v6](https://reactrouter.com) |
-| HTTP | [Axios](https://axios-http.com) |
-| Slider | [Swiper.js](https://swiperjs.com) |
-| Datepicker | [Flatpickr](https://flatpickr.js.org) |
-| Icons | [Font Awesome 6](https://fontawesome.com) |
-| Hosting | [Vercel](https://vercel.com) |
+```
+| Category   | Technology                                 |
+|------------|--------------------------------------------|
+| Framework  | [React 18](https://react.dev)              |
+| Build      | [Vite 5](https://vitejs.dev)               |
+| Routing    | [React Router v6](https://reactrouter.com) |
+| HTTP       | [Axios](https://axios-http.com)            |
+| Slider     | [Swiper.js](https://swiperjs.com)          |
+| Datepicker | [Flatpickr](https://flatpickr.js.org)      |
+| Icons      | [Font Awesome 6](https://fontawesome.com)  |
+| Hosting    | [Vercel](https://vercel.com)               |
+```
 
 ### Backend
-| | |
-|---|---|
-| Runtime | [Node.js](https://nodejs.org) 18+ |
-| Framework | [Express.js](https://expressjs.com) |
-| Database | [MongoDB Atlas](https://cloud.mongodb.com) |
-| ODM | [Mongoose](https://mongoosejs.com) |
-| Auth | JWT + bcryptjs |
-| Email | [Nodemailer](https://nodemailer.com) + [Brevo](https://www.brevo.com) |
-| Hosting | [Render](https://render.com) |
+```
+| Category  | Technology                                                            |
+|-----------|-----------------------------------------------------------------------|
+| Runtime   | [Node.js](https://nodejs.org) 18+                                     |
+| Framework | [Express.js](https://expressjs.com)                                   |
+| Database  | [MongoDB Atlas](https://cloud.mongodb.com)                            |
+| ODM       | [Mongoose](https://mongoosejs.com)                                    |
+| Auth      | JWT + bcryptjs                                                        |
+| Email     | [Nodemailer](https://nodemailer.com) + [Brevo](https://www.brevo.com) |
+| Hosting   | [Render](https://render.com)                                          |
+```
 
 ---
 
